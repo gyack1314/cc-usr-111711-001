@@ -1,0 +1,101 @@
+{
+  "period": "2026-11-20",
+  "known_at": [
+    "2026-11-12T00:00:00+00:00",
+    "2026-11-16T00:00:00+00:00"
+  ],
+  "documents": [
+    {
+      "source": "supply-office",
+      "document_id": "supply-1",
+      "revision": "r1",
+      "received_at": "2026-11-10T00:00:00+00:00",
+      "records": [
+        {
+          "kind": "supply",
+          "id": "airport-batch-1",
+          "revision": "r1",
+          "valid_from": "2026-11-01",
+          "payload": {
+            "product": "SAF",
+            "market": "airport-A",
+            "batch": "airport-batch-1",
+            "quantity": 60,
+            "unit_cost": 3.5,
+            "intensity": 0.34,
+            "start": "2026-11-01",
+            "end": "2026-12-31",
+            "claim_scope": "加注站、实际航班与属性凭证分属不同运营责任。"
+          }
+        }
+      ]
+    },
+    {
+      "source": "buyer-office",
+      "document_id": "demand-1",
+      "revision": "r1",
+      "received_at": "2026-11-10T01:00:00+00:00",
+      "records": [
+        {
+          "kind": "demand",
+          "id": "flight-bank-1",
+          "revision": "r1",
+          "valid_from": "2026-11-01",
+          "payload": {
+            "product": "SAF",
+            "market": "airport-A",
+            "quantity": 80,
+            "priority": 1,
+            "required_certificate": "CORSIA",
+            "start": "2026-11-01",
+            "end": "2026-12-31"
+          }
+        }
+      ]
+    },
+    {
+      "source": "certificate-office",
+      "document_id": "certificate-1",
+      "revision": "r1",
+      "received_at": "2026-11-11T00:00:00+00:00",
+      "records": [
+        {
+          "kind": "certificate",
+          "id": "cert-airport-batch-1",
+          "revision": "r1",
+          "valid_from": "2026-11-01",
+          "payload": {
+            "batch": "airport-batch-1",
+            "standard": "CORSIA",
+            "state": "active",
+            "start": "2026-11-01",
+            "end": "2026-12-31",
+            "quantity": 60
+          }
+        }
+      ]
+    },
+    {
+      "source": "certificate-office",
+      "document_id": "certificate-2",
+      "revision": "r1",
+      "received_at": "2026-11-15T00:00:00+00:00",
+      "records": [
+        {
+          "kind": "certificate",
+          "id": "cert-airport-batch-1",
+          "revision": "r2",
+          "valid_from": "2026-11-01",
+          "payload": {
+            "batch": "airport-batch-1",
+            "standard": "CORSIA",
+            "state": "suspended",
+            "start": "2026-11-01",
+            "end": "2026-12-31",
+            "quantity": 60
+          }
+        }
+      ]
+    }
+  ]
+}
